@@ -12,6 +12,7 @@ interface StudyStore {
   currentDay: number
 
   fetchLogs: () => Promise<void>
+  clearLogs: () => void
   updateChecklist: (dayNumber: number, field: 'checklist_recall' | 'checklist_learn' | 'checklist_implement' | 'checklist_doc', value: boolean) => Promise<void>
   markDayComplete: (dayNumber: number) => Promise<void>
   carryOver: (dayNumber: number) => Promise<void>
@@ -28,6 +29,9 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
   currentDay: 1,
 
   fetchLogs: async () => {
+    const { data: { user } } = await supabase.auth.getUser()
+    if (!user) return
+
     set({ loading: true })
     const { data, error } = await supabase
       .from('study_log')
@@ -40,7 +44,37 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
       return
     }
 
-    const logs = (data || []) as StudyLogEntry[]
+    let logs = (data || []) as StudyLogEntry[]
+
+    // Auto-seed if first time for this user
+    if (logs.length === 0) {
+      console.log('Seeding logs for user:', user.id)
+      const seedData = typedPlan.map(day => ({
+        user_id: user.id,
+        day_number: day.day,
+        phase: day.phase,
+        task_type: day.taskType,
+        primary_topic: day.title,
+        status: 'Not Started',
+        completed_date: null,
+        next_srs_review: null,
+        checklist_recall: false,
+        checklist_learn: false,
+        checklist_implement: false,
+        checklist_doc: false
+      }))
+
+      const { data: inserted, error: seedError } = await supabase
+        .from('study_log')
+        .insert(seedData)
+        .select()
+
+      if (seedError) {
+        console.error('Error seeding logs:', seedError)
+      } else {
+        logs = (inserted || []) as StudyLogEntry[]
+      }
+    }
 
     // Calculate current day: first incomplete day
     let currentDay = 1
@@ -55,6 +89,8 @@ export const useStudyStore = create<StudyStore>((set, get) => ({
 
     set({ logs, loading: false, currentDay })
   },
+
+  clearLogs: () => set({ logs: [], currentDay: 1, loading: true }),
 
   updateChecklist: async (dayNumber, field, value) => {
     const existing = get().logs.find(l => l.day_number === dayNumber)

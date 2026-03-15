@@ -1,16 +1,15 @@
 import { useStudyStore } from '../store/useStudyStore'
 import { supabase } from '../lib/supabase'
-import plan from '../data/plan.json'
-import type { StudyDay } from '../types'
-import { Download, Upload, Trash2, RefreshCw } from 'lucide-react'
+import { Download, Upload, Trash2, RefreshCw, LogOut, User } from 'lucide-react'
 import { useState } from 'react'
+import { useAuthStore } from '../store/useAuthStore'
 
-const typedPlan = plan as StudyDay[]
 
 export default function Settings() {
   const { fetchLogs, logs } = useStudyStore()
+  const { user, signOut } = useAuthStore()
   const [syncing, setSyncing] = useState(false)
-  const [seeding, setSeeding] = useState(false)
+  const [signingOut, setSigningOut] = useState(false)
 
   const handleExport = () => {
     const blob = new Blob([JSON.stringify(logs, null, 2)], { type: 'application/json' })
@@ -63,42 +62,9 @@ export default function Settings() {
     setSyncing(false)
   }
 
-  const handleSeedData = async () => {
-    setSeeding(true)
-    try {
-      // Check what already exists
-      const { data: existing } = await supabase.from('study_log').select('day_number')
-      const existingDays = new Set((existing || []).map(e => e.day_number))
-
-      // Insert missing days
-      const toInsert = typedPlan
-        .filter(day => !existingDays.has(day.day))
-        .map(day => ({
-          day_number: day.day,
-          phase: day.phase,
-          task_type: day.taskType,
-          primary_topic: day.title,
-          status: 'Not Started',
-          completed_date: null,
-          next_srs_review: null,
-          checklist_recall: false,
-          checklist_learn: false,
-          checklist_implement: false,
-          checklist_doc: false,
-        }))
-
-      if (toInsert.length > 0) {
-        const { error } = await supabase.from('study_log').insert(toInsert)
-        if (error) throw error
-      }
-
-      await fetchLogs()
-      alert(`Seeded ${toInsert.length} new days. ${150 - toInsert.length} already existed.`)
-    } catch (err) {
-      console.error('Seed error:', err)
-      alert('Error seeding data')
-    }
-    setSeeding(false)
+  const handleSignOut = async () => {
+    setSigningOut(true)
+    await signOut()
   }
 
   return (
@@ -108,25 +74,31 @@ export default function Settings() {
         <p className="text-text-secondary mt-2 text-lg">Manage your tracker data and preferences</p>
       </div>
 
-      {/* Seed Data */}
+      {/* Account Management */}
       <div className="rounded-3xl bg-bg-card border border-border p-8 space-y-5 shadow-sm">
-        <h3 className="text-xl font-bold text-text-primary">Initialize Data</h3>
-        <p className="text-sm font-medium text-text-secondary leading-relaxed">
-          Seed the Supabase database with all 150 days from the prep plan. This only adds missing days and won't overwrite existing progress.
-        </p>
+        <h3 className="text-xl font-bold text-text-primary">Account Management</h3>
+        <div className="flex items-center gap-4 bg-bg-secondary/50 p-4 rounded-2xl border border-white/5">
+          <div className="w-12 h-12 rounded-xl bg-accent/20 flex items-center justify-center text-accent">
+            <User className="w-6 h-6" />
+          </div>
+          <div>
+            <div className="text-sm font-bold text-text-primary">{user?.email}</div>
+            <div className="text-xs text-text-muted">Personal Study Vault</div>
+          </div>
+        </div>
         <button
-          onClick={handleSeedData}
-          disabled={seeding}
-          className="flex items-center gap-3 px-6 py-3 rounded-xl bg-accent/10 text-accent border border-accent/30 text-base font-bold hover:bg-accent/20 transition-all disabled:opacity-50"
+          onClick={handleSignOut}
+          disabled={signingOut}
+          className="flex items-center gap-3 px-6 py-3 rounded-xl bg-danger/10 text-danger border border-danger/30 text-base font-bold hover:bg-danger/20 transition-all disabled:opacity-50"
         >
-          <RefreshCw className={`w-5 h-5 ${seeding ? 'animate-spin' : ''}`} />
-          {seeding ? 'Seeding Database...' : 'Seed 150-Day Plan'}
+          <LogOut className={`w-5 h-5 ${signingOut ? 'animate-pulse' : ''}`} />
+          {signingOut ? 'Signing Out...' : 'Sign Out'}
         </button>
       </div>
 
       {/* Sync Status */}
       <div className="rounded-3xl bg-bg-card border border-border p-8 space-y-5 shadow-sm">
-        <h3 className="text-xl font-bold text-text-primary">Supabase Sync</h3>
+        <h3 className="text-xl font-bold text-text-primary">Database Sync</h3>
         <div className="flex items-center gap-4 bg-bg-secondary/50 p-4 rounded-2xl border border-border/50">
           <div className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-success opacity-75"></span>
