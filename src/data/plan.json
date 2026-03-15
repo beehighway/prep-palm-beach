@@ -1,0 +1,2397 @@
+[
+  {
+    "day": 1,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "DSA",
+    "title": "The Basics - Iterative Sorting",
+    "topics": [
+      "Bubble Sort",
+      "Insertion Sort",
+      "Selection Sort"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 2,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "System Design",
+    "title": "Networking Foundations",
+    "topics": [
+      "TCP vs UDP",
+      "IP layer",
+      "HTTP/1.1 vs HTTP/2"
+    ],
+    "problems": [],
+    "warmup": "Bubble Sort"
+  },
+  {
+    "day": 3,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "DSA",
+    "title": "The Basics - Divide & Conquer Sorting",
+    "topics": [
+      "Merge Sort",
+      "Quick Sort"
+    ],
+    "problems": [
+      {
+        "name": "Sort an Array",
+        "lc": 912,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 4,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "System Design",
+    "title": "Storage Foundations",
+    "topics": [
+      "SQL vs NoSQL",
+      "ACID vs BASE"
+    ],
+    "problems": [],
+    "warmup": "Merge Sort"
+  },
+  {
+    "day": 5,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Quick Sort partition logic"
+  },
+  {
+    "day": 6,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Gauntlet",
+    "title": "Fundamentals Gauntlet",
+    "topics": [
+      "Custom Comparators",
+      "Core Data Structure Layouts"
+    ],
+    "problems": [
+      {
+        "name": "Design HashMap",
+        "lc": 706,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Insertion Sort List",
+        "lc": 147,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 7,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 1",
+    "topics": [],
+    "problems": [],
+    "warmup": "Basic Hash Map structure"
+  },
+  {
+    "day": 8,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "DSA",
+    "title": "Patterns 06/99 & 07/99 - Prefix/Suffix Arrays & Sums",
+    "topics": [
+      "Prefix/Suffix Arrays",
+      "Prefix/Suffix Sums"
+    ],
+    "problems": [
+      {
+        "name": "Range Sum Query - Immutable",
+        "lc": 303,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Product of Array Except Self",
+        "lc": 238,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      6,
+      7
+    ]
+  },
+  {
+    "day": 9,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "System Design",
+    "title": "Architecture - Load Balancing & Proxies",
+    "topics": [
+      "L4 vs L7 Load Balancing",
+      "Forward vs Reverse Proxies"
+    ],
+    "problems": [],
+    "warmup": "Prefix Sum array generation"
+  },
+  {
+    "day": 10,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "DSA",
+    "title": "Patterns 08/99 & 09/99 - Hashing & Frequency Maps",
+    "topics": [
+      "O(1) lookups",
+      "Frequency tracking"
+    ],
+    "problems": [
+      {
+        "name": "Valid Anagram",
+        "lc": 242,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Two Sum",
+        "lc": 1,
+        "difficulty": "Easy"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      8,
+      9
+    ]
+  },
+  {
+    "day": 11,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "System Design",
+    "title": "Architecture - API Gateways & BFF",
+    "topics": [
+      "API Gateways",
+      "BFF Pattern"
+    ],
+    "problems": [],
+    "warmup": "Fixed array anagram logic"
+  },
+  {
+    "day": 12,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Two Sum complement lookup"
+  },
+  {
+    "day": 13,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Gauntlet",
+    "title": "Hashing & Gateway Gauntlet",
+    "topics": [
+      "Nested Hash Maps (Pattern 10/99)"
+    ],
+    "problems": [
+      {
+        "name": "Group Anagrams",
+        "lc": 49,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Top K Frequent Elements",
+        "lc": 347,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      10,
+      11
+    ]
+  },
+  {
+    "day": 14,
+    "phase": "Phase 0: Rebuilding The Foundations",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 2",
+    "topics": [],
+    "problems": [],
+    "warmup": "int[26] frequency map"
+  },
+  {
+    "day": 15,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "DSA",
+    "title": "Patterns 17/99 & 18/99 - Two Pointers Converging & Partitioning",
+    "topics": [
+      "Two Pointers Converging",
+      "Array Partitioning"
+    ],
+    "problems": [
+      {
+        "name": "Valid Palindrome",
+        "lc": 125,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Sort Colors",
+        "lc": 75,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      17,
+      18
+    ]
+  },
+  {
+    "day": 16,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "System Design",
+    "title": "Data - Caching Strategies",
+    "topics": [
+      "Cache-Aside",
+      "Write-Through",
+      "Write-Back"
+    ],
+    "problems": [],
+    "warmup": "Two Pointers converging logic"
+  },
+  {
+    "day": 17,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "DSA",
+    "title": "Patterns 19/99 & 20/99 - In-place Modification & Fast/Slow",
+    "topics": [
+      "Read/Write Pointers",
+      "Tortoise and Hare"
+    ],
+    "problems": [
+      {
+        "name": "Remove Duplicates from Sorted Array",
+        "lc": 26,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Linked List Cycle",
+        "lc": 141,
+        "difficulty": "Easy"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      19,
+      20
+    ]
+  },
+  {
+    "day": 18,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "System Design",
+    "title": "Performance - Rate Limiting Algorithms",
+    "topics": [
+      "Token Bucket",
+      "Leaky Bucket",
+      "Sliding Window Log"
+    ],
+    "problems": [],
+    "warmup": "Fast/Slow pointer initialization"
+  },
+  {
+    "day": 19,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Linked list node swaps",
+    "patternIds": [
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  {
+    "day": 20,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Gauntlet",
+    "title": "Pointers Gauntlet",
+    "topics": [
+      "Advanced converging pointers"
+    ],
+    "problems": [
+      {
+        "name": "Container With Most Water",
+        "lc": 11,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "3Sum",
+        "lc": 15,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 21,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 3",
+    "topics": [],
+    "problems": [],
+    "warmup": "Dutch National Flag partition"
+  },
+  {
+    "day": 22,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "DSA",
+    "title": "Patterns 01/99 & 02/99 - Sliding Window Fixed & Substrings",
+    "topics": [
+      "Fixed Sliding Window",
+      "Substring Tracking"
+    ],
+    "problems": [
+      {
+        "name": "Maximum Average Subarray I",
+        "lc": 643,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Find All Anagrams in a String",
+        "lc": 438,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      1,
+      2
+    ]
+  },
+  {
+    "day": 23,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "System Design",
+    "title": "Data - Consistent Hashing",
+    "topics": [
+      "Consistent Hashing",
+      "Virtual Nodes"
+    ],
+    "problems": [],
+    "warmup": "Fixed window sum calculation"
+  },
+  {
+    "day": 24,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "DSA",
+    "title": "Pattern 03/99 - Variable Window (Shrinkable)",
+    "topics": [
+      "Shrinkable Window"
+    ],
+    "problems": [
+      {
+        "name": "Minimum Size Subarray Sum",
+        "lc": 209,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      3
+    ]
+  },
+  {
+    "day": 25,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "System Design",
+    "title": "Architecture - Database Replication",
+    "topics": [
+      "Leader-Follower",
+      "Leaderless"
+    ],
+    "problems": [],
+    "warmup": "Shrinking window while loop"
+  },
+  {
+    "day": 26,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Array tracking using a frequency map"
+  },
+  {
+    "day": 27,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Gauntlet",
+    "title": "Window Gauntlet",
+    "topics": [
+      "Variable Window - Max Window (Pattern 04/99)"
+    ],
+    "problems": [
+      {
+        "name": "Longest Substring Without Repeating Characters",
+        "lc": 3,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Longest Repeating Character Replacement",
+        "lc": 424,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      4,
+      5
+    ]
+  },
+  {
+    "day": 28,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 4",
+    "topics": [],
+    "problems": [],
+    "warmup": "Sliding window boundary setup"
+  },
+  {
+    "day": 29,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "DSA",
+    "title": "Patterns 12/99 & 21/99 - Bit Manipulation & Special Reversals",
+    "topics": [
+      "XOR properties",
+      "Filtered Reversal"
+    ],
+    "problems": [
+      {
+        "name": "Single Number",
+        "lc": 136,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Reverse Vowels of a String",
+        "lc": 345,
+        "difficulty": "Easy"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      12,
+      21
+    ]
+  },
+  {
+    "day": 30,
+    "phase": "Phase 1: Pointers & Windows",
+    "taskType": "System Design",
+    "title": "Data - Sharding & Partitioning",
+    "topics": [
+      "Range-based Sharding",
+      "Hash-based Sharding",
+      "Directory-based Sharding"
+    ],
+    "problems": [],
+    "warmup": "XOR array reduction"
+  },
+  {
+    "day": 31,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 23/99 & 24/99 - Next Greater Element & Monotonic Decreasing Stack",
+    "topics": [
+      "Monotonic Stack"
+    ],
+    "problems": [
+      {
+        "name": "Next Greater Element I",
+        "lc": 496,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Daily Temperatures",
+        "lc": 739,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      23,
+      24
+    ]
+  },
+  {
+    "day": 32,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Architecture - Message Queues & Pub/Sub",
+    "topics": [
+      "Kafka vs RabbitMQ",
+      "Consumer Groups"
+    ],
+    "problems": [],
+    "warmup": "Monotonic stack initialization"
+  },
+  {
+    "day": 33,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Array index mapping"
+  },
+  {
+    "day": 34,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Gauntlet",
+    "title": "Stacks Gauntlet",
+    "topics": [
+      "Monotonic Increasing/Decreasing (Pattern 25/99)"
+    ],
+    "problems": [
+      {
+        "name": "Largest Rectangle in Histogram",
+        "lc": 84,
+        "difficulty": "Hard"
+      },
+      {
+        "name": "Online Stock Span",
+        "lc": 901,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      25
+    ]
+  },
+  {
+    "day": 35,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 5",
+    "topics": [],
+    "problems": [],
+    "warmup": "Daily Temperatures logic"
+  },
+  {
+    "day": 36,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 26/99 & 27/99 - Remove Adjacent Duplicates & Expression Parsing",
+    "topics": [
+      "Stack Reduction",
+      "RPN Evaluation"
+    ],
+    "problems": [
+      {
+        "name": "Remove All Adjacent Duplicates In String",
+        "lc": 1047,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Evaluate Reverse Polish Notation",
+        "lc": 150,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      26,
+      27
+    ]
+  },
+  {
+    "day": 37,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Architecture - Event Sourcing",
+    "topics": [
+      "Event Sourcing",
+      "Snapshotting"
+    ],
+    "problems": [],
+    "warmup": "RPN evaluation loop"
+  },
+  {
+    "day": 38,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 28/99 & 29/99 - Linked List Reversal & Merge Sorted Lists",
+    "topics": [
+      "In-place Pointer Manipulation",
+      "List Merging"
+    ],
+    "problems": [
+      {
+        "name": "Reverse Linked List",
+        "lc": 206,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Merge Two Sorted Lists",
+        "lc": 21,
+        "difficulty": "Easy"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      28,
+      29
+    ]
+  },
+  {
+    "day": 39,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Architecture - CQRS",
+    "topics": [
+      "CQRS",
+      "Materialized Views"
+    ],
+    "problems": [],
+    "warmup": "Linked List reversal"
+  },
+  {
+    "day": 40,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Dummy node creation"
+  },
+  {
+    "day": 41,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Gauntlet",
+    "title": "Linked List Gauntlet",
+    "topics": [
+      "Reverse in k-Group (Pattern 30/99)",
+      "Deep Copying (Pattern 31/99)"
+    ],
+    "problems": [
+      {
+        "name": "Reverse Nodes in k-Group",
+        "lc": 25,
+        "difficulty": "Hard"
+      },
+      {
+        "name": "Copy List with Random Pointer",
+        "lc": 138,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      30,
+      31
+    ]
+  },
+  {
+    "day": 42,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 6",
+    "topics": [],
+    "problems": [],
+    "warmup": "Merge two lists logic"
+  },
+  {
+    "day": 43,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 32/99 & 33/99 - Level-Order Tree Traversal & Graph BFS",
+    "topics": [
+      "BFS Queue Processing",
+      "Clone Graph"
+    ],
+    "problems": [
+      {
+        "name": "Binary Tree Level Order Traversal",
+        "lc": 102,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Clone Graph",
+        "lc": 133,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      32,
+      33
+    ]
+  },
+  {
+    "day": 44,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Microservices - Saga Pattern",
+    "topics": [
+      "Saga Pattern",
+      "Choreography vs Orchestration"
+    ],
+    "problems": [],
+    "warmup": "BFS queue initialization"
+  },
+  {
+    "day": 45,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 34/99 & 35/99 - Shortest Path in Matrix & Multi-Source BFS",
+    "topics": [
+      "Grid BFS",
+      "Multi-Source BFS"
+    ],
+    "problems": [
+      {
+        "name": "Shortest Path in Binary Matrix",
+        "lc": 1091,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Rotting Oranges",
+        "lc": 994,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      34,
+      35
+    ]
+  },
+  {
+    "day": 46,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Reliability - Circuit Breaker Pattern",
+    "topics": [
+      "Circuit Breaker",
+      "Closed/Open/Half-Open"
+    ],
+    "problems": [],
+    "warmup": "Multi-source queue setup"
+  },
+  {
+    "day": 47,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "2D matrix bounds checking"
+  },
+  {
+    "day": 48,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Gauntlet",
+    "title": "BFS & Microservices Gauntlet",
+    "topics": [
+      "Advanced Shortest Path"
+    ],
+    "problems": [
+      {
+        "name": "Word Ladder",
+        "lc": 127,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 49,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 7",
+    "topics": [],
+    "problems": [],
+    "warmup": "Word Ladder wildcard logic"
+  },
+  {
+    "day": 50,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 36/99 & 37/99 - Matrix DFS Search & Grid Search",
+    "topics": [
+      "Grid DFS",
+      "Boundary Rules"
+    ],
+    "problems": [
+      {
+        "name": "Number of Islands",
+        "lc": 200,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Surrounded Regions",
+        "lc": 130,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      36,
+      37
+    ]
+  },
+  {
+    "day": 51,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "System Design - Distributed ID Generator",
+    "topics": [
+      "Snowflake Algorithm",
+      "Clock Synchronization"
+    ],
+    "problems": [],
+    "warmup": "DFS recursive helper function"
+  },
+  {
+    "day": 52,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 38/99 & 39/99 - Recursive Tree Search & Backtracking Combinations",
+    "topics": [
+      "Pre/In/Post-order",
+      "Decision Trees"
+    ],
+    "problems": [
+      {
+        "name": "Lowest Common Ancestor of a Binary Tree",
+        "lc": 236,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Permutations",
+        "lc": 46,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      38,
+      39,
+      72
+    ]
+  },
+  {
+    "day": 53,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "System Design - URL Shortener",
+    "topics": [
+      "Base62 Encoding",
+      "Key Generation Service"
+    ],
+    "problems": [],
+    "warmup": "Permutations array append logic"
+  },
+  {
+    "day": 54,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Base62 encoding logic"
+  },
+  {
+    "day": 55,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Gauntlet",
+    "title": "DFS & Design Gauntlet",
+    "topics": [
+      "Constraint Satisfaction",
+      "Recursive Pruning"
+    ],
+    "problems": [
+      {
+        "name": "Word Search",
+        "lc": 79,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "N-Queens",
+        "lc": 51,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 56,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 8",
+    "topics": [],
+    "problems": [],
+    "warmup": "N-Queens diagonal tracking"
+  },
+  {
+    "day": 57,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 40/99, 41/99 & 42/99 - Connected Components, Word Search + Tries, Topological Sort",
+    "topics": [
+      "Graph Cycles",
+      "Trie + DFS",
+      "Dependency Resolution"
+    ],
+    "problems": [
+      {
+        "name": "Number of Provinces",
+        "lc": 547,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Course Schedule",
+        "lc": 207,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      40,
+      41,
+      42
+    ]
+  },
+  {
+    "day": 58,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "Architecture - The Outbox Pattern",
+    "topics": [
+      "Outbox Pattern",
+      "Dual-write Problem"
+    ],
+    "problems": [],
+    "warmup": "Kahn's Algorithm queue"
+  },
+  {
+    "day": 59,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "DSA",
+    "title": "Patterns 47/99, 48/99 & 49/99 - Standard Binary Search & On Answer Space",
+    "topics": [
+      "Binary Search",
+      "Answer Space Search"
+    ],
+    "problems": [
+      {
+        "name": "Find First and Last Position of Element in Sorted Array",
+        "lc": 34,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Koko Eating Bananas",
+        "lc": 875,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      47,
+      48,
+      49
+    ]
+  },
+  {
+    "day": 60,
+    "phase": "Phase 2: Stacks, Linked Lists & Async Messaging",
+    "taskType": "System Design",
+    "title": "System Design - Design a Key-Value Store",
+    "topics": [
+      "Dynamo-style KV Store",
+      "Read/Write Quorums"
+    ],
+    "problems": [],
+    "warmup": "Binary search left <= right template"
+  },
+  {
+    "day": 61,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Binary search boundary testing"
+  },
+  {
+    "day": 62,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "Search & Architecture Gauntlet",
+    "topics": [
+      "Advanced Partition Logic"
+    ],
+    "problems": [
+      {
+        "name": "Median of Two Sorted Arrays",
+        "lc": 4,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 63,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 9",
+    "topics": [],
+    "problems": [],
+    "warmup": "DFS matrix bounds"
+  },
+  {
+    "day": 64,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 55/99 & 56/99 - 1D Sequence Tabulation & Constant Space",
+    "topics": [
+      "Bottom-up DP",
+      "O(1) Space DP"
+    ],
+    "problems": [
+      {
+        "name": "Climbing Stairs",
+        "lc": 70,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "House Robber",
+        "lc": 198,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      55,
+      56
+    ]
+  },
+  {
+    "day": 65,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "Architecture - WebSockets & Real-Time Chat",
+    "topics": [
+      "WebSockets",
+      "SSE",
+      "Long Polling"
+    ],
+    "problems": [],
+    "warmup": "1D DP tabulation loop"
+  },
+  {
+    "day": 66,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 57/99 & 58/99 - Decision Making & String Partitioning",
+    "topics": [
+      "Include/Exclude DP",
+      "Word Break"
+    ],
+    "problems": [
+      {
+        "name": "Coin Change",
+        "lc": 322,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Word Break",
+        "lc": 139,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      57,
+      58
+    ]
+  },
+  {
+    "day": 67,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Notification System",
+    "topics": [
+      "Async Processing",
+      "Third-party APIs"
+    ],
+    "problems": [],
+    "warmup": "Word Break nested loops"
+  },
+  {
+    "day": 68,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Coin Change state initialization"
+  },
+  {
+    "day": 69,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "1D DP Gauntlet",
+    "topics": [
+      "LIS (Pattern 59/99)"
+    ],
+    "problems": [
+      {
+        "name": "Longest Increasing Subsequence",
+        "lc": 300,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      59
+    ]
+  },
+  {
+    "day": 70,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 10",
+    "topics": [],
+    "problems": [],
+    "warmup": "House Robber O(1) space logic"
+  },
+  {
+    "day": 71,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 60/99 & 61/99 - Matrix Pathfinding & 0/1 Knapsack",
+    "topics": [
+      "2D State Transitions",
+      "Bounded Inclusion/Exclusion"
+    ],
+    "problems": [
+      {
+        "name": "Unique Paths",
+        "lc": 62,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Partition Equal Subset Sum",
+        "lc": 416,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      60,
+      61,
+      62
+    ]
+  },
+  {
+    "day": 72,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Newsfeed Architecture",
+    "topics": [
+      "Fan-out on Write",
+      "Fan-out on Read"
+    ],
+    "problems": [],
+    "warmup": "2D DP grid initialization"
+  },
+  {
+    "day": 73,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 63/99 & 64/99 - LCS & Edit Distance",
+    "topics": [
+      "String Comparison DP",
+      "Transformation DP"
+    ],
+    "problems": [
+      {
+        "name": "Longest Common Subsequence",
+        "lc": 1143,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Edit Distance",
+        "lc": 72,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      63,
+      64
+    ]
+  },
+  {
+    "day": 74,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Heavy Media Storage",
+    "topics": [
+      "Blob Storage",
+      "CDNs",
+      "Pre-signed URLs"
+    ],
+    "problems": [],
+    "warmup": "LCS nested loop conditions"
+  },
+  {
+    "day": 75,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Knapsack backward iteration"
+  },
+  {
+    "day": 76,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "2D DP Gauntlet",
+    "topics": [
+      "Matrix Chain (Pattern 65/99)",
+      "Interval DP (Pattern 70/99)"
+    ],
+    "problems": [
+      {
+        "name": "Burst Balloons",
+        "lc": 312,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      65,
+      68,
+      70
+    ]
+  },
+  {
+    "day": 77,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 11",
+    "topics": [],
+    "problems": [],
+    "warmup": "Edit Distance base cases"
+  },
+  {
+    "day": 78,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 66/99 & 69/99 - State Machine DP & Palindrome DP",
+    "topics": [
+      "State Machine DP",
+      "Substring DP"
+    ],
+    "problems": [
+      {
+        "name": "Best Time to Buy and Sell Stock with Cooldown",
+        "lc": 309,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Longest Palindromic Substring",
+        "lc": 5,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      22,
+      66,
+      69
+    ]
+  },
+  {
+    "day": 79,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Distributed Locking",
+    "topics": [
+      "Pessimistic vs Optimistic Locking",
+      "Redis Redlock"
+    ],
+    "problems": [],
+    "warmup": "Palindrome center expansion"
+  },
+  {
+    "day": 80,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 50/99 & 51/99 - Top K Elements & K-Way Merge",
+    "topics": [
+      "Priority Queues",
+      "Multi-stream Merging"
+    ],
+    "problems": [
+      {
+        "name": "Kth Largest Element in an Array",
+        "lc": 215,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Merge k Sorted Lists",
+        "lc": 23,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      50,
+      51
+    ]
+  },
+  {
+    "day": 81,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Video Streaming",
+    "topics": [
+      "Video Chunking",
+      "Adaptive Bitrate Streaming",
+      "DASH/HLS"
+    ],
+    "problems": [],
+    "warmup": "Heap push/pop mechanics"
+  },
+  {
+    "day": 82,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "K-way merge initialization"
+  },
+  {
+    "day": 83,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "Heaps Gauntlet",
+    "topics": [
+      "Two Heaps / Median Tracking (Pattern 52/99)"
+    ],
+    "problems": [
+      {
+        "name": "Find Median from Data Stream",
+        "lc": 295,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      52,
+      53,
+      54
+    ]
+  },
+  {
+    "day": 84,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 12",
+    "topics": [],
+    "problems": [],
+    "warmup": "Heapify operations"
+  },
+  {
+    "day": 85,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 43/99 & 44/99 - Interval Overlap & Merge Intervals",
+    "topics": [
+      "Sorting by Start/End",
+      "Resolving Overlaps"
+    ],
+    "problems": [
+      {
+        "name": "Merge Intervals",
+        "lc": 56,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Non-overlapping Intervals",
+        "lc": 435,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      43,
+      44
+    ]
+  },
+  {
+    "day": 86,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Geospatial & Proximity Services",
+    "topics": [
+      "Quadtrees",
+      "Geohashes",
+      "Spatial Indexing"
+    ],
+    "problems": [],
+    "warmup": "Interval sorting by start time"
+  },
+  {
+    "day": 87,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 45/99 & 46/99 - Insert Interval & Greedy Optimization",
+    "topics": [
+      "Range Splicing",
+      "Local Optimum"
+    ],
+    "problems": [
+      {
+        "name": "Insert Interval",
+        "lc": 57,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Jump Game",
+        "lc": 55,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      45,
+      46
+    ]
+  },
+  {
+    "day": 88,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Web Crawler",
+    "topics": [
+      "URL Frontier",
+      "Politeness Policies",
+      "BFS at Scale"
+    ],
+    "problems": [],
+    "warmup": "Greedy jump logic"
+  },
+  {
+    "day": 89,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Inserting an interval logic"
+  },
+  {
+    "day": 90,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "Intervals & Greedy Gauntlet",
+    "topics": [
+      "Advanced Greedy"
+    ],
+    "problems": [
+      {
+        "name": "Jump Game II",
+        "lc": 45,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Meeting Rooms II",
+        "lc": 253,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 91,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 13",
+    "topics": [],
+    "problems": [],
+    "warmup": "Sweep line logic"
+  },
+  {
+    "day": 92,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 71/99 & 73/99 - Tree Construction & Validating BST",
+    "topics": [
+      "Building from Traversals",
+      "BST Validation"
+    ],
+    "problems": [
+      {
+        "name": "Construct Binary Tree from Preorder and Inorder Traversal",
+        "lc": 105,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Validate Binary Search Tree",
+        "lc": 98,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      71,
+      73
+    ]
+  },
+  {
+    "day": 93,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Collaborative Editing",
+    "topics": [
+      "OT vs CRDTs"
+    ],
+    "problems": [],
+    "warmup": "Preorder traversal array slicing"
+  },
+  {
+    "day": 94,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Patterns 74/99 & 75/99 - Serialization & Path Sum State",
+    "topics": [
+      "Tree Serialization",
+      "Recursive State Passing"
+    ],
+    "problems": [
+      {
+        "name": "Serialize and Deserialize Binary Tree",
+        "lc": 297,
+        "difficulty": "Hard"
+      },
+      {
+        "name": "Binary Tree Maximum Path Sum",
+        "lc": 124,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      74,
+      75
+    ]
+  },
+  {
+    "day": 95,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Metrics & Monitoring",
+    "topics": [
+      "Time-series Databases",
+      "Push vs Pull Metrics"
+    ],
+    "problems": [],
+    "warmup": "BST boundary passing"
+  },
+  {
+    "day": 96,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Path sum global variable updates"
+  },
+  {
+    "day": 97,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Gauntlet",
+    "title": "Advanced Trees Gauntlet",
+    "topics": [
+      "Constant Space Traversal (Pattern 76/99)"
+    ],
+    "problems": [
+      {
+        "name": "Recover Binary Search Tree",
+        "lc": 99,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      76
+    ]
+  },
+  {
+    "day": 98,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 14",
+    "topics": [],
+    "problems": [],
+    "warmup": "Morris traversal threading logic"
+  },
+  {
+    "day": 99,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "DSA",
+    "title": "Pattern 67/99 - DP on Trees",
+    "topics": [
+      "Post-order DP"
+    ],
+    "problems": [
+      {
+        "name": "House Robber III",
+        "lc": 337,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      67
+    ]
+  },
+  {
+    "day": 100,
+    "phase": "Phase 3: Dynamic Programming, Heaps & Scalability",
+    "taskType": "System Design",
+    "title": "System Design - Capstone Mock 1",
+    "topics": [
+      "End-to-end Architecture Synthesis"
+    ],
+    "problems": [],
+    "warmup": "Tuple return in Tree DP"
+  },
+  {
+    "day": 101,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 77/99 & 78/99 - Standard Dictionary Trie & Trie + DFS",
+    "topics": [
+      "Trie Insertion",
+      "Grid Trie Search"
+    ],
+    "problems": [
+      {
+        "name": "Implement Trie (Prefix Tree)",
+        "lc": 208,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Word Search II",
+        "lc": 212,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      77,
+      78
+    ]
+  },
+  {
+    "day": 102,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Payment Gateway",
+    "topics": [
+      "Idempotency Keys",
+      "Exact-once Delivery"
+    ],
+    "problems": [],
+    "warmup": "Trie insertion logic"
+  },
+  {
+    "day": 103,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Trie search logic"
+  },
+  {
+    "day": 104,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Gauntlet",
+    "title": "Tries & Payments Gauntlet",
+    "topics": [
+      "Bitwise Trie (Pattern 79/99)"
+    ],
+    "problems": [
+      {
+        "name": "Maximum XOR of Two Numbers in an Array",
+        "lc": 421,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      79
+    ]
+  },
+  {
+    "day": 105,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 15",
+    "topics": [],
+    "problems": [],
+    "warmup": "Bitwise XOR logic"
+  },
+  {
+    "day": 106,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 80/99 & 81/99 - Dijkstra & Bellman-Ford",
+    "topics": [
+      "Weighted Shortest Paths",
+      "Negative Weights"
+    ],
+    "problems": [
+      {
+        "name": "Network Delay Time",
+        "lc": 743,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Cheapest Flights Within K Stops",
+        "lc": 787,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      80,
+      81
+    ]
+  },
+  {
+    "day": 107,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Typeahead Suggestion System",
+    "topics": [
+      "Distributed Tries",
+      "Top K Heavy Hitters"
+    ],
+    "problems": [],
+    "warmup": "Dijkstra Min-Heap setup"
+  },
+  {
+    "day": 108,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 82/99 & 83/99 - Union-Find & Kruskal's MST",
+    "topics": [
+      "Disjoint Sets",
+      "MST"
+    ],
+    "problems": [
+      {
+        "name": "Redundant Connection",
+        "lc": 684,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Min Cost to Connect All Points",
+        "lc": 1584,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      82,
+      83
+    ]
+  },
+  {
+    "day": 109,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Rate Limiter",
+    "topics": [
+      "Distributed Rate Limiter",
+      "Token Bucket Revisited"
+    ],
+    "problems": [],
+    "warmup": "Union-Find find with path compression"
+  },
+  {
+    "day": 110,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Kruskal's edge sorting"
+  },
+  {
+    "day": 111,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Gauntlet",
+    "title": "Advanced Graphs Gauntlet",
+    "topics": [
+      "Eulerian Path (Pattern 84/99)",
+      "Bipartite (Pattern 85/99)",
+      "Tarjan's (Pattern 86/99)"
+    ],
+    "problems": [
+      {
+        "name": "Reconstruct Itinerary",
+        "lc": 332,
+        "difficulty": "Hard"
+      },
+      {
+        "name": "Is Graph Bipartite?",
+        "lc": 785,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "Critical Connections",
+        "lc": 1192,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      84,
+      85,
+      86
+    ]
+  },
+  {
+    "day": 112,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 16",
+    "topics": [],
+    "problems": [],
+    "warmup": "Bipartite graph coloring arrays"
+  },
+  {
+    "day": 113,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 87/99 & 88/99 - Rabin-Karp & KMP",
+    "topics": [
+      "Rolling Hashes",
+      "LPS Array"
+    ],
+    "problems": [
+      {
+        "name": "Find the Index of the First Occurrence in a String",
+        "lc": 28,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Longest Happy Prefix",
+        "lc": 1392,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      87,
+      88
+    ]
+  },
+  {
+    "day": 114,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Distributed Cache",
+    "topics": [
+      "Memcached/Redis Architecture",
+      "LRU Cache"
+    ],
+    "problems": [],
+    "warmup": "LPS array initialization"
+  },
+  {
+    "day": 115,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 89/99 & 90/99 - String State Machine & Run-Length Encoding",
+    "topics": [
+      "DFA Parsing",
+      "Lossless Compression"
+    ],
+    "problems": [
+      {
+        "name": "String to Integer (atoi)",
+        "lc": 8,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "String Compression",
+        "lc": 443,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      89,
+      90
+    ]
+  },
+  {
+    "day": 116,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Ride-Sharing App",
+    "topics": [
+      "Geospatial Scaling",
+      "Real-time Dispatching"
+    ],
+    "problems": [],
+    "warmup": "State machine conditionals"
+  },
+  {
+    "day": 117,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "RLE character counting"
+  },
+  {
+    "day": 118,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Gauntlet",
+    "title": "Advanced Strings Gauntlet",
+    "topics": [
+      "Text Justification (Pattern 91/99)"
+    ],
+    "problems": [
+      {
+        "name": "Text Justification",
+        "lc": 68,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      91
+    ]
+  },
+  {
+    "day": 119,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 17",
+    "topics": [],
+    "problems": [],
+    "warmup": "Text justification spacing math"
+  },
+  {
+    "day": 120,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 92/99 & 93/99 - XOR Properties & Sieve of Eratosthenes",
+    "topics": [
+      "Bitwise Cancellation",
+      "Prime Generation"
+    ],
+    "problems": [
+      {
+        "name": "Missing Number",
+        "lc": 268,
+        "difficulty": "Easy"
+      },
+      {
+        "name": "Count Primes",
+        "lc": 204,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      92,
+      93
+    ]
+  },
+  {
+    "day": 121,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design an E-Commerce Checkout System",
+    "topics": [
+      "Distributed Transactions",
+      "Inventory Reservations"
+    ],
+    "problems": [],
+    "warmup": "Sieve boolean array"
+  },
+  {
+    "day": 122,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 94/99 & 95/99 - Fast Exponentiation & Sweep Line",
+    "topics": [
+      "O(log N) Power",
+      "Timeline Processing"
+    ],
+    "problems": [
+      {
+        "name": "Pow(x, n)",
+        "lc": 50,
+        "difficulty": "Medium"
+      },
+      {
+        "name": "The Skyline Problem",
+        "lc": 218,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      94,
+      95
+    ]
+  },
+  {
+    "day": 123,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design an Ad Click Aggregator",
+    "topics": [
+      "High-throughput Ingestion",
+      "Time-window Aggregation"
+    ],
+    "problems": [],
+    "warmup": "Fast exponentiation recursion"
+  },
+  {
+    "day": 124,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Sweep line event sorting"
+  },
+  {
+    "day": 125,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Gauntlet",
+    "title": "Math & Geometry Gauntlet",
+    "topics": [
+      "Coordinate Math"
+    ],
+    "problems": [
+      {
+        "name": "Max Points on a Line",
+        "lc": 149,
+        "difficulty": "Hard"
+      }
+    ],
+    "warmup": null
+  },
+  {
+    "day": 126,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 18",
+    "topics": [],
+    "problems": [],
+    "warmup": "GCD algorithm"
+  },
+  {
+    "day": 127,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 96/99 & 97/99 - Segment Tree (Point & Range Updates)",
+    "topics": [
+      "Segment Tree",
+      "Lazy Propagation"
+    ],
+    "problems": [
+      {
+        "name": "Range Sum Query - Mutable",
+        "lc": 307,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      96,
+      97
+    ]
+  },
+  {
+    "day": 128,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design Mock - Design a Location-Based Service",
+    "topics": [
+      "Geospatial Reads",
+      "High-throughput Writes"
+    ],
+    "problems": [],
+    "warmup": "Segment Tree node structure"
+  },
+  {
+    "day": 129,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "DSA",
+    "title": "Patterns 98/99 & 99/99 - Fenwick Tree & Ternary Search",
+    "topics": [
+      "Binary Indexed Tree",
+      "Unimodal Functions"
+    ],
+    "problems": [
+      {
+        "name": "Count of Smaller Numbers After Self",
+        "lc": 315,
+        "difficulty": "Hard"
+      },
+      {
+        "name": "Find Peak Element",
+        "lc": 162,
+        "difficulty": "Medium"
+      }
+    ],
+    "warmup": null,
+    "patternIds": [
+      98,
+      99
+    ]
+  },
+  {
+    "day": 130,
+    "phase": "Phase 4: Advanced Toolkit & Mock Sprints",
+    "taskType": "System Design",
+    "title": "System Design - Capstone Mock 2",
+    "topics": [
+      "End-to-end Execution"
+    ],
+    "problems": [],
+    "warmup": "Ternary search bounds"
+  },
+  {
+    "day": 131,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Quick Sort array partitioning"
+  },
+  {
+    "day": 132,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Gauntlet",
+    "title": "Blind Pattern Gauntlet 1",
+    "topics": [
+      "Pattern Recognition Under Pressure"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 133,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 19",
+    "topics": [],
+    "problems": [],
+    "warmup": "LRU Cache get/put structure"
+  },
+  {
+    "day": 134,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "DSA",
+    "title": "Blind Pattern Drill - Set A",
+    "topics": [
+      "Trigger Word Identification"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 135,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "System Design",
+    "title": "System Design - Capstone Mock 3",
+    "topics": [
+      "Chat System (WhatsApp/Discord)"
+    ],
+    "problems": [],
+    "warmup": "Random blind pattern"
+  },
+  {
+    "day": 136,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "DSA",
+    "title": "Blind Pattern Drill - Set B",
+    "topics": [
+      "Sustained Execution"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 137,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "System Design",
+    "title": "System Design - Capstone Mock 4",
+    "topics": [
+      "YouTube/Netflix CDN Architecture"
+    ],
+    "problems": [],
+    "warmup": "Random blind pattern"
+  },
+  {
+    "day": 138,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Buffer",
+    "title": "Buffer Day",
+    "topics": [],
+    "problems": [],
+    "warmup": "Any weak blind pattern"
+  },
+  {
+    "day": 139,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Gauntlet",
+    "title": "Full Technical Loop Simulation 1",
+    "topics": [
+      "Interview Stamina"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 140,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Recall",
+    "title": "Active Recall - Week 20",
+    "topics": [],
+    "problems": [],
+    "warmup": "Trie structure"
+  },
+  {
+    "day": 141,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "DSA",
+    "title": "Behavioral - STAR Method Deep Dive",
+    "topics": [
+      "STAR Response Structuring"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 142,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "System Design",
+    "title": "Behavioral - Leadership Principles",
+    "topics": [
+      "Amazon LPs / Core Values"
+    ],
+    "problems": [],
+    "warmup": "Binary Search boundaries"
+  },
+  {
+    "day": 143,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "DSA",
+    "title": "Blind Pattern Drill - Set C",
+    "topics": [
+      "Final Weak Spot Practice"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 144,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "System Design",
+    "title": "Behavioral - Architecture Deep Dive",
+    "topics": [
+      "Past Project Discussion"
+    ],
+    "problems": [],
+    "warmup": "Merge Intervals"
+  },
+  {
+    "day": 145,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Buffer",
+    "title": "Buffer Day - Complete Rest",
+    "topics": [],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 146,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Gauntlet",
+    "title": "Full Technical Loop Simulation 2",
+    "topics": [
+      "Final Stamina Test"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 147,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Recall",
+    "title": "Active Recall - Triage Week 21",
+    "topics": [],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 148,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "DSA",
+    "title": "The Taper - Core 15 Patterns Review",
+    "topics": [
+      "Top 15 patterns verbal walkthrough"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 149,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "System Design",
+    "title": "The Taper - HLD Concept Review",
+    "topics": [
+      "CAP Theorem",
+      "Consistent Hashing",
+      "Kafka vs RabbitMQ"
+    ],
+    "problems": [],
+    "warmup": null
+  },
+  {
+    "day": 150,
+    "phase": "Phase 5: Muscle Memory & Final Polish",
+    "taskType": "Buffer",
+    "title": "Total Rest & Mental Prep",
+    "topics": [
+      "Trust the process"
+    ],
+    "problems": [],
+    "warmup": null
+  }
+]

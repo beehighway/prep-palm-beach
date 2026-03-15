@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #050508;
+  --color-bg-secondary: #0d0d16;
+  --color-bg-card: #141423;
+  --color-bg-card-hover: #1c1c30;
+  --color-border: #232338;
+  --color-border-focus: #7c3aed;
+  --color-accent: #7c3aed;
+  --color-accent-glow: #a78bfa;
+  --color-success: #10b981;
+  --color-success-dim: #059669;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #64748b;
+  
+  --color-dsa: #3b82f6;
+  --color-sysdesign: #10b981;
+  --color-buffer: #f59e0b;
+  --color-gauntlet: #ec4899;
+  --color-recall: #8b5cf6;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(124, 58, 237, 0.04), transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(16, 185, 129, 0.03), transparent 50%);
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}

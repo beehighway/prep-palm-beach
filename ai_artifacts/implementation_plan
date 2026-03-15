@@ -1,0 +1,77 @@
+# Implementation Plan: Antigravity Tracker App
+
+## Goal Description
+Build a lightweight, offline-first web application to track the 150-day software engineering interview preparation plan ("prep-palm-beach"). The application will feature dynamic progression tracking (Days Completed rather than dates) and a Spaced Repetition System (SRS) for daily coding warm-ups. It will be built using a modern React stack with Zustand for optimistic UI updates and Supabase for cloud data persistence.
+
+> [!NOTE]
+> We will use the Supabase MCP to automatically fetch the existing Supabase project and apply migrations to set up the `StudyLog` schema.
+
+## Data Storage & Content Seeding
+The core content of the application (patterns, topics, and daily plans) will be extracted from the provided [prep-palm-beach-plan.md](file:///c:/Users/Nitrolo/Documents/repos/prep-palm-beach/prep-palm-beach-plan.md).
+- **Topic & Pattern Catalog**: We will parse Section 2 to create a structural representation of the 20 topics and 99 patterns.
+- **150-Day Execution Plan**: We will parse Section 3 to map each of the 150 days to specific patterns, topics, and objectives.
+- **Storage**: This generated data will be stored as static JSON assets (`src/data/catalog.json` and `src/data/plan.json`) that the application will use to render the UI and seed the Local/Supabase states as needed.
+
+## Proposed Changes
+
+### Project Initialization & Setup
+- Use the Supabase MCP Server to get project keys and create tables.
+- Initialize a new Vite project with React and TypeScript (`vite@latest . --template react-ts`).
+- Install dependencies: `tailwindcss postcss autoprefixer`, `zustand`, `@supabase/supabase-js`, `react-router-dom`, `lucide-react`, `date-fns`, `clsx`, `tailwind-merge`.
+- Configure Tailwind CSS for a clean, Dark mode default IDE-like aesthetic.
+
+### Database Integration (Supabase)
+- **Table Name**: `StudyLog`
+- **Schema**:
+  - `id`: integer or uuid, primary key
+  - `day_number`: integer (1 to 150)
+  - `phase`: string
+  - `task_type`: string (Enum: "DSA", "System Design", "Buffer", "Gauntlet", "Recall")
+  - `primary_topic`: string
+  - `status`: string (Enum: "Not Started", "Completed", "Needs Review", "Carry Over")
+  - `completed_date`: timestampz
+  - `next_srs_review`: timestampz
+  - `checklist_recall`: boolean
+  - `checklist_learn`: boolean
+  - `checklist_implement`: boolean
+  - `checklist_doc`: boolean
+- Create a `src/lib/supabase.ts` client to connect to the Supabase instance.
+
+### State Management (Zustand)
+- Create `src/store/useStudyStore.ts` to act as an optimistic UI cache.
+- Implement actions to fetch daily logs, mark sub-tasks complete, advance days, carry over blocked tasks, and calculate the next SRS review date (+14 days).
+
+### Core UI Components
+The application will consist of the following views:
+1. **Command Center Dashboard (Home View)**: Displays the current Day, SRS warm-up alerts (capped at 2), and a momentum tracker.
+2. **99-Pattern Grid (Gamification View)**: A GitHub-style commit graph representing DSA pattern completion (Gray, Green, Yellow states).
+3. **Metrics Panel**: Global progress bar and category counters for Phase 1 to 5.
+4. **Pattern Detail Page**: Focused workspace for a specific algorithm/system design topic with the 120-minute blueprint checklist and a 15-minute doc markdown area.
+5. **System Design Workspace**: Architecture-focused layout with requirements block, component ledger, bottleneck scratchpad, and external diagram link.
+6. **The Gauntlet & Mock Arena**: Exam simulator with random problem generators and countdown timers (Meta Speed Drill / Google Deep Dive).
+7. **Buffer Queue**: Kanban board for "Carried Over" tasks waiting for Friday flex days.
+8. **Settings & Data Vault**: Supabase sync status, local JSON export/import backup, and Reset Sandbox tools.
+
+### Routing
+- Map the internal components using `react-router-dom`:
+  - `/` -> Dashboard
+  - `/grid` -> 99-Pattern Grid
+  - `/metrics` -> Analytics View
+  - `/pattern/:id` -> Pattern Detail Page
+  - `/system-design/:id` -> System Design Workspace
+  - `/arena` -> Gauntlet Arena
+  - `/buffer` -> Buffer Queue
+  - `/settings` -> Settings Page
+
+## Verification Plan
+
+### Automated Tests
+- Once the Vite app is created, verify that `npm run build` completes without TypeScript errors.
+
+### Manual Verification
+1. Run `npm run dev` and navigate to `http://localhost:5173`.
+2. Ensure the dark theme base layout renders correctly.
+3. Verify that completing the 4 checklist items (Recall, Learn, Implement, Doc) for a day marks it as Complete and correctly calculates the `next_srs_review` date.
+4. Verify the Supabase real-time sync works (using dummy data initially before final deployment).
+5. Verify the Spaced Repetition System strictly limits the dashboard view to 2 warm-ups daily, prioritizing the oldest overdue patterns. 
+6. Confirm the "Carry Over" functionality moves a blocked task to the Buffer Queue.

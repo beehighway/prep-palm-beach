@@ -1,0 +1,248 @@
+{
+  "topics": [
+    {
+      "id": 1,
+      "name": "Expandable Sliding Window Pattern",
+      "patterns": [
+        { "patternId": 1, "name": "Max/Min Sum" },
+        { "patternId": 2, "name": "String Substrings" },
+        { "patternId": 3, "name": "Variable Window - Smaller Window" },
+        { "patternId": 4, "name": "Variable Window - Max Window" },
+        { "patternId": 5, "name": "Sliding Window with Hash Map" }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Pre-Computation & Hash Maps",
+      "patterns": [
+        { "patternId": 6, "name": "Prefix / Suffix Arrays" },
+        { "patternId": 7, "name": "Prefix / Suffix Sums" },
+        { "patternId": 8, "name": "Hashing / Counting" },
+        { "patternId": 9, "name": "Hash Maps & Frequency" },
+        { "patternId": 10, "name": "Nested Hash Maps & Frequency" },
+        { "patternId": 11, "name": "Rectangle Overlap / Intersection" }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Logical & Manipulation Pattern",
+      "patterns": [
+        { "patternId": 12, "name": "Math / Bit Manipulation" },
+        { "patternId": 13, "name": "Matrix Rotation" },
+        { "patternId": 14, "name": "Reconstructing Matrix" },
+        { "patternId": 15, "name": "Design & Classes" },
+        { "patternId": 16, "name": "Simulation & Backtracking" }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Two Pointers Pattern",
+      "patterns": [
+        { "patternId": 17, "name": "Two Pointers Converging" },
+        { "patternId": 18, "name": "Array Partitioning" },
+        { "patternId": 19, "name": "In-place Array Modification" },
+        { "patternId": 20, "name": "Fast & Slow Pointers" },
+        { "patternId": 21, "name": "String Reversal with Special Characters" },
+        { "patternId": 22, "name": "Expanding From Center" }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Stacks & Monotonic Stacks",
+      "patterns": [
+        { "patternId": 23, "name": "Next Greater/Smaller Element" },
+        { "patternId": 24, "name": "Monotonic Decreasing Stack" },
+        { "patternId": 25, "name": "Monotonic Increasing/Decreasing" },
+        { "patternId": 26, "name": "Remove All Adjacent Duplicates" },
+        { "patternId": 27, "name": "Expression Parsing" }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Linked Lists",
+      "patterns": [
+        { "patternId": 28, "name": "Linked List Reversal" },
+        { "patternId": 29, "name": "Merge Sorted Lists" },
+        { "patternId": 30, "name": "Reverse Nodes in k-Group" },
+        { "patternId": 31, "name": "Deep Copying" }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Breadth-First Search (BFS)",
+      "patterns": [
+        { "patternId": 32, "name": "Level-Order Tree Traversal" },
+        { "patternId": 33, "name": "Graph/Matrix BFS" },
+        { "patternId": 34, "name": "Shortest Path in Matrix" },
+        { "patternId": 35, "name": "Multi-Source BFS" }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Depth-First Search (DFS)",
+      "patterns": [
+        { "patternId": 36, "name": "Matrix DFS Search" },
+        { "patternId": 37, "name": "Matrix Grid Search" },
+        { "patternId": 38, "name": "Recursive Tree Search" },
+        { "patternId": 39, "name": "Backtracking Combinations" },
+        { "patternId": 40, "name": "Graph Search / Connected Components" },
+        { "patternId": 41, "name": "Word Search & Tries" },
+        { "patternId": 42, "name": "Topological Sort" }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Greedy & Intervals",
+      "patterns": [
+        { "patternId": 43, "name": "Interval Overlap" },
+        { "patternId": 44, "name": "Merge Intervals" },
+        { "patternId": 45, "name": "Insert Interval" },
+        { "patternId": 46, "name": "Greedy Optimization" }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Binary Search",
+      "patterns": [
+        { "patternId": 47, "name": "Binary Search / Standard" },
+        { "patternId": 48, "name": "Binary Search on Answer Space" },
+        { "patternId": 49, "name": "Two Pointers Binary Search" }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Heaps & Priority Queues",
+      "patterns": [
+        { "patternId": 50, "name": "Top K Elements" },
+        { "patternId": 51, "name": "K-Way Merge" },
+        { "patternId": 52, "name": "Two Heaps (Median Tracking)" },
+        { "patternId": 53, "name": "Task Scheduling & Cooldowns" },
+        { "patternId": 54, "name": "Minimum Cost Connect" }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "1D Dynamic Programming",
+      "patterns": [
+        { "patternId": 55, "name": "Sequence Tabulation" },
+        { "patternId": 56, "name": "Constant Space Sequence" },
+        { "patternId": 57, "name": "Decision Making (Include/Exclude)" },
+        { "patternId": 58, "name": "String Partitioning" },
+        { "patternId": 59, "name": "Longest Increasing Subsequence" }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "2D Dynamic Programming",
+      "patterns": [
+        { "patternId": 60, "name": "Matrix Pathfinding" },
+        { "patternId": 61, "name": "0/1 Knapsack" },
+        { "patternId": 62, "name": "Unbounded Knapsack" },
+        { "patternId": 63, "name": "Longest Common Subsequence" },
+        { "patternId": 64, "name": "Edit Distance" },
+        { "patternId": 65, "name": "Matrix Chain Transitions" }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Advanced Dynamic Programming",
+      "patterns": [
+        { "patternId": 66, "name": "State Machine DP" },
+        { "patternId": 67, "name": "DP on Trees" },
+        { "patternId": 68, "name": "DP with Bitmasking" },
+        { "patternId": 69, "name": "Palindrome DP" },
+        { "patternId": 70, "name": "Interval DP" }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Trees (Binary & BST)",
+      "patterns": [
+        { "patternId": 71, "name": "Tree Construction (From Traversals)" },
+        { "patternId": 72, "name": "Lowest Common Ancestor" },
+        { "patternId": 73, "name": "Validating BST Properties" },
+        { "patternId": 74, "name": "Serialization & Deserialization" },
+        { "patternId": 75, "name": "Path Sum State Tracking" },
+        { "patternId": 76, "name": "Constant Space Traversal (Morris)" }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Tries (Prefix Trees)",
+      "patterns": [
+        { "patternId": 77, "name": "Standard Dictionary Trie" },
+        { "patternId": 78, "name": "Trie + DFS Grid Search" },
+        { "patternId": 79, "name": "Bitwise Trie (Maximum XOR)" }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Advanced Graphs",
+      "patterns": [
+        { "patternId": 80, "name": "Dijkstra's Shortest Path" },
+        { "patternId": 81, "name": "Bellman-Ford (Negative Weights)" },
+        { "patternId": 82, "name": "Union-Find (Disjoint Sets)" },
+        { "patternId": 83, "name": "Kruskal's MST" },
+        { "patternId": 84, "name": "Eulerian Path / Circuit" },
+        { "patternId": 85, "name": "Bipartite Graph Checking" },
+        { "patternId": 86, "name": "Tarjan's Algorithm (Bridges)" }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Advanced Strings & Parsing",
+      "patterns": [
+        { "patternId": 87, "name": "Rabin-Karp (Rolling Hash)" },
+        { "patternId": 88, "name": "KMP (Longest Prefix Suffix)" },
+        { "patternId": 89, "name": "String State Machine (FSM)" },
+        { "patternId": 90, "name": "Run-Length Encoding" },
+        { "patternId": 91, "name": "Text Justification" }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Bitwise & Math",
+      "patterns": [
+        { "patternId": 92, "name": "XOR Pairing & Properties" },
+        { "patternId": 93, "name": "Sieve of Eratosthenes" },
+        { "patternId": 94, "name": "Fast Exponentiation" },
+        { "patternId": 95, "name": "Sweep Line / Geometry" }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Highly Specialized (SDE2/SWE3)",
+      "patterns": [
+        { "patternId": 96, "name": "Segment Tree (Point Updates)" },
+        { "patternId": 97, "name": "Segment Tree (Range Updates/Lazy)" },
+        { "patternId": 98, "name": "Fenwick Tree (Binary Indexed Tree)" },
+        { "patternId": 99, "name": "Ternary Search" }
+      ]
+    }
+  ],
+  "systemDesignTopics": [
+    { "id": 1, "name": "TCP vs UDP, IPv4 vs IPv6" },
+    { "id": 2, "name": "HTTP/1.1 vs HTTP/2 (Multiplexing, Head-of-line blocking)" },
+    { "id": 3, "name": "WebSockets, Long Polling, Server-Sent Events (SSE)" },
+    { "id": 4, "name": "Relational (SQL) vs Non-Relational (NoSQL) Theory" },
+    { "id": 5, "name": "ACID vs BASE Properties, CAP Theorem" },
+    { "id": 6, "name": "Write-Ahead Logging (WAL)" },
+    { "id": 7, "name": "B-Trees vs Log-Structured Merge (LSM) Trees & SSTables" },
+    { "id": 8, "name": "Database Sharding (Range, Hash, Directory)" },
+    { "id": 9, "name": "Consistent Hashing & Virtual Nodes" },
+    { "id": 10, "name": "Quorum Consensus (N = W + R math, Hinted Handoff)" },
+    { "id": 11, "name": "Replication Strategies (Leader-Follower, Leaderless, Multi-Leader)" },
+    { "id": 12, "name": "Conflict Resolution (Vector Clocks, LWW)" },
+    { "id": 13, "name": "API Gateways & Backend-for-Frontend (BFF)" },
+    { "id": 14, "name": "Load Balancing (L4 vs L7, Forward vs Reverse Proxy)" },
+    { "id": 15, "name": "Event-Driven Architecture (Pub/Sub, Message Queues like Kafka/RabbitMQ)" },
+    { "id": 16, "name": "Command Query Responsibility Segregation (CQRS)" },
+    { "id": 17, "name": "Event Sourcing" },
+    { "id": 18, "name": "The Outbox Pattern (Dual-write problem resolution)" },
+    { "id": 19, "name": "Caching Strategies (Cache-Aside, Write-Through, Write-Back)" },
+    { "id": 20, "name": "Rate Limiting Algorithms (Token Bucket, Leaky Bucket, Sliding Window Log)" },
+    { "id": 21, "name": "Distributed Transactions (Two-Phase Commit, Saga Pattern)" },
+    { "id": 22, "name": "Circuit Breaker Pattern" },
+    { "id": 23, "name": "Probabilistic Data Structures (Bloom Filters, Count-Min Sketch)" }
+  ]
+}
